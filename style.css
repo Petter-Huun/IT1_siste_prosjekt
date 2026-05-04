@@ -1,3 +1,47 @@
 :root {
-    
+    --backgroundcolor-1: rgb(97, 97, 255);
+    --light-gray: rgb(236, 235, 235); 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero {
+    background-image: url(bilder/alpint_1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroh1 {
+    font-size: 100px;
+    color: var(--light-gray);
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+#s2 {
+    height: 100vh;
+    background-color: var(--backgroundcolor-1);
 }
