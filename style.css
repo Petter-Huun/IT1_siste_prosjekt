@@ -44,4 +44,24 @@ p {
 #s2 {
     height: 100vh;
     background-color: var(--backgroundcolor-1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#s3 {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.d1, .d2, .d3, .d4 {
+    height: 90vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
 }
