@@ -73,13 +73,23 @@ p {
     border-radius: 10px;
 }
 
-.d2bilde {
+.pdiv {
+    border: 1px solid var(--light-blue);
+    border-radius: 5px;
+    background-color: var(--light-blue);
+    padding: 5px;
+    width: 80%;
+    
+    
+}
+
+.divbilde {
     width: 80%;
     border-radius: 20px;
     margin: auto;
 }
 
-.d2bilde:hover {
+.divbilde:hover {
     transition: 0.2s ease;
     transform: scale(1.05);
 }
