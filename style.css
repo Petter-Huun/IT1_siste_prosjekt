@@ -22,6 +22,21 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+header {
+    background-color: var(--light-blue);
+    position: fixed;
+    width: 100%;
+}
+
+.headerikon {
+    font-size: 30px;
+
+}
+
+.headerA {
+    color: inherit;
+}
+
 .hero {
     background-image: url(bilder/alpint_1.webp);
     background-position: center;
