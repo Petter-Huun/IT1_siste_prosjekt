@@ -26,15 +26,17 @@ header {
     background-color: var(--light-blue);
     position: fixed;
     width: 100%;
+    border-bottom: 1px solid var(--backgroundcolor-1);
+    height: 50px;
 }
 
 .headerikon {
     font-size: 30px;
-
 }
 
 .headerA {
     color: inherit;
+    height: 50px;
 }
 
 .hero {
@@ -61,6 +63,7 @@ p {
 #s2 {
     height: 100vh;
     background-color: var(--backgroundcolor-1);
+    background: linear-gradient(to top, var(--backgroundcolor-1), var(--light-blue));
     display: flex;
     justify-content: space-evenly;
     align-items: center;
