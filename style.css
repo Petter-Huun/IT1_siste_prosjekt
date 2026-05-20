@@ -105,8 +105,8 @@ p {
     background-color: var(--light-blue);
     padding: 5px;
     width: 80%;
-    
-    
+
+
 }
 
 .divbilde {
@@ -156,4 +156,19 @@ footer div i:hover {
     cursor: pointer;
     transition: 0.1s ease;
     transform: scale(1.2);
+}
+
+@media (width < 600px) {
+    #s2 {
+        flex-direction: column;
+        height: 150vh;
+    }
+
+    .d1,
+    .d2,
+    .d3,
+    .d4 {
+        height: 70vh;
+        width: 60%;
+    }
 }
