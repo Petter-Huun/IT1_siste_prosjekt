@@ -33,9 +33,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 9;
 }
 
-.headerikon {
+header i {
     font-size: 30px;
 }
 
@@ -43,6 +44,38 @@ header a {
     color: inherit;
     display: block;
     height: fit-content;
+}
+
+#burgerx {
+    display: none;
+}
+
+.burgermeny {
+    display: none;
+}
+
+.burgermeny.visburger {
+    display: flex;
+    height: calc(100vh - 49px);
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: absolute;
+    top: 49px;
+    right: 0;
+    padding: 40px;
+}
+
+
+.burgermeny h1 {
+    color: #FFFFFF;
+}
+
+.burgermeny a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 #hero {
