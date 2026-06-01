@@ -1,6 +1,7 @@
 const burger = document.getElementById("burger")
 const burgerx = document.getElementById("burgerx")
 const burgermeny = document.getElementById("burgermeny")
+const medie = document.getElementById("medie")
 
 
 burger.addEventListener("click", () => {
@@ -10,6 +11,12 @@ burger.addEventListener("click", () => {
 })
 
 burgerx.addEventListener("click", () => {
+    burgermeny.classList.toggle("visburger")
+    burger.style.display = "block"
+    burgerx.style.display = "none"
+})
+
+medie.addEventListener("click", () => {
     burgermeny.classList.toggle("visburger")
     burger.style.display = "block"
     burgerx.style.display = "none"
