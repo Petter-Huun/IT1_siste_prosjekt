@@ -242,6 +242,10 @@ footer div i:hover {
     border: 1px solid darkblue;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 
 @media (width < 600px) {
     #s2, #ds2 {
