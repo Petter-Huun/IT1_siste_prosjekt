@@ -22,3 +22,7 @@ medie.addEventListener("click", () => {
     burgerx.style.display = "none"
 })
 
+function bla(flytt) {
+    document.getElementById("scrollbar").scrollBy({left: flytt, behavior: "smooth"});
+}
+
