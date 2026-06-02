@@ -240,10 +240,20 @@ footer div i:hover {
     background-color: var(--light-blue);
     display: inline-block;
     border: 1px solid darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
 }
 
 button:hover {
     cursor: pointer;
+}
+
+.disiplin img {
+    height: 300px;
 }
 
 
