@@ -225,7 +225,6 @@ footer div i:hover {
 
 #scrollbar {
     overflow-x: auto;
-    white-space: nowrap;
     width: 1000px;
 }
 
@@ -240,12 +239,20 @@ footer div i:hover {
     background-color: var(--light-blue);
     display: inline-block;
     border: 1px solid darkblue;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
     padding: 15px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.disiplin-innhold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 button:hover {
@@ -253,12 +260,14 @@ button:hover {
 }
 
 .disiplin img {
-    height: 300px;
+    height: 250px;
 }
 
 
 @media (width < 600px) {
-    #s2, #ds2 {
+
+    #s2,
+    #ds2 {
         flex-direction: column;
         height: 150vh;
     }
