@@ -70,9 +70,18 @@
         </h1>
 
         <div class="container">
-            <button onclick="bla(-470)">
+            <button class="venstre" onclick="bla(-470)">
                 <i class="fa-solid fa-arrow-left"></i>
             </button>
+            <div class="oppnedcontainer">
+                <button class="opp" onclick="bla_y(-510)">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+                <button class="ned" onclick="bla_y(510)">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
+            </div>
+
 
             <div id="scrollbar">
                 <div class="innhold">
@@ -156,7 +165,7 @@
                 </div>
             </div>
 
-            <button onclick="bla(470)">
+            <button class="hoyre" onclick="bla(470)">
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
 

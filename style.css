@@ -267,6 +267,20 @@ button:hover {
     height: 250px;
 }
 
+.opp, .ned {
+    display: none;
+}
+
+.hoyre, .venstre {
+    display: block;
+}
+
+.oppnedcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 @media (width < 1000px) {
     #scrollbar {
         overflow-x: hidden;
@@ -281,6 +295,14 @@ button:hover {
 
     .disiplin {
         width: 400px;
+    }
+
+    .opp, .ned {
+        display: block;
+    }
+
+    .hoyre, .venstre {
+        display: none;
     }
 }
 

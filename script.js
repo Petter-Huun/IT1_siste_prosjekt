@@ -26,3 +26,7 @@ function bla(flytt) {
     document.getElementById("scrollbar").scrollBy({left: flytt, behavior: "smooth"});
 }
 
+function bla_y(flytt) {
+    document.getElementById("scrollbar").scrollBy({top: flytt, behavior: "smooth"});
+}
+
