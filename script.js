@@ -2,7 +2,8 @@ const burger = document.getElementById("burger")
 const burgerx = document.getElementById("burgerx")
 const burgermeny = document.getElementById("burgermeny")
 const medie = document.getElementById("medie")
-
+const disiplin = document.getElementById("disp")
+const wc = document.getElementById("wc")
 
 burger.addEventListener("click", () => {
     burgermeny.classList.toggle("visburger")

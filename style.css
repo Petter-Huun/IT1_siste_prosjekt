@@ -85,6 +85,29 @@ header a {
     color: #FFFFFF;
 }
 
+#disp, #wc, #medie {
+    position: relative;
+    display: inline-block;
+}
+
+#disp::after, #wc::after, #medie::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}   
+
+#disp:hover::after, #wc:hover::after, #medie:hover::after {
+    transform: scaleX(1);
+}
+
+
 #hero {
     background-image: url(bilder/alpint_1.webp);
     background-position: center;
