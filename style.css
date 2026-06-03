@@ -27,10 +27,11 @@ body {
 header {
     background-color: var(--light-blue);
     position: fixed;
-    width: 100%;
+    width: 100vw;
     border-bottom: 2px solid var(--backgroundcolor-1);
     height: 50px;
     top: 0px;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -232,7 +233,7 @@ footer div i:hover {
 /* DETTE ER TIL DISIPLINER-SIDEN */
 
 #ds2 {
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,13 +260,13 @@ footer div i:hover {
 .innhold {
     display: inline-flex;
     gap: 25px;
+    align-items: stretch;
 }
 
 .disiplin {
     width: 450px;
-    height: 500px;
     background-color: var(--light-blue);
-    display: inline-block;
+    display: flex;
     border: 1px solid darkblue;
     justify-content: center;
     align-items: center;
@@ -280,6 +281,14 @@ footer div i:hover {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    flex: 1;
+}
+
+.fikse-knappen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
 }
 
 .tekstboks {
@@ -326,7 +335,7 @@ button:hover {
 .oppnedcontainer {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .container button {
@@ -339,11 +348,7 @@ button:hover {
     transform: scale(2);
 }
 
-.fikse-knappen {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 
 @media (width < 1000px) {
     #scrollbar {
@@ -358,7 +363,7 @@ button:hover {
     }
 
     .disiplin {
-        width: 400px;
+        width: 85vw;
     }
 
     .opp, .ned {
@@ -383,6 +388,7 @@ button:hover {
     #ds2 {
         flex-direction: column;
         height: 100vh;
+        padding: 5px;
     }
 
     .d1,
