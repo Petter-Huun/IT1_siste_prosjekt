@@ -31,3 +31,13 @@ function bla_y(flytt) {
     document.getElementById("scrollbar").scrollBy({top: flytt, behavior: "smooth"});
 }
 
+function visInnhold(trykk) {
+    const tekst = trykk.previousElementSibling
+    tekst.classList.toggle("open")
+    if (tekst.classList.contains("open")) {
+        trykk.innerHTML = "LUKK"
+    } else {
+        trykk.innerHTML = "LES MER"
+    }
+}
+
