@@ -449,6 +449,16 @@ button:hover {
     padding: 5px;
 }
 
+.vis-knapp:hover {
+    background-color: darkgreen;
+    color: var(--white);
+}
+
+.vis-knapp.endreFarge:hover {
+    background-color: darkred;
+    color: var(--white);
+}
+
 .venstre:hover,
 .hoyre:hover,
 .opp:hover,
@@ -559,5 +569,11 @@ button:hover {
 
     .burgermeny.visburger {
         padding: 20px;
+    }
+}
+
+@media (width < 370px) {
+    .s3boks {
+        width: 70vw;
     }
 }

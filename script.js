@@ -34,6 +34,7 @@ function bla_y(flytt) {
 function visInnhold(trykk) {
     const tekst = trykk.previousElementSibling
     tekst.classList.toggle("open")
+    trykk.classList.toggle("endreFarge")
     if (tekst.classList.contains("open")) {
         trykk.innerHTML = "LES MINDRE"
     } else {
