@@ -35,7 +35,7 @@ function visInnhold(trykk) {
     const tekst = trykk.previousElementSibling
     tekst.classList.toggle("open")
     if (tekst.classList.contains("open")) {
-        trykk.innerHTML = "LUKK"
+        trykk.innerHTML = "LES MINDRE"
     } else {
         trykk.innerHTML = "LES MER"
     }

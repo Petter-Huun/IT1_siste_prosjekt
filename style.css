@@ -88,12 +88,12 @@ header a {
     color: #FFFFFF;
 }
 
-#disp, #wc, #medie {
+.menyinnhold {
     position: relative;
     display: inline-block;
 }
 
-#disp::after, #wc::after, #medie::after {
+.menyinnhold::after {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -106,7 +106,7 @@ header a {
     transition: transform 0.3s ease;
 }   
 
-#disp:hover::after, #wc:hover::after, #medie:hover::after {
+.menyinnhold:hover::after {
     transform: scaleX(1);
 }
 
@@ -357,6 +357,7 @@ footer div i:hover {
 button:hover {
     cursor: pointer;
 }
+
 
 .disiplin img {
     height: 250px;
