@@ -36,6 +36,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 9;
+    padding: 0 15px;
 }
 
 header i {
@@ -397,5 +398,9 @@ button:hover {
     .d4 {
         height: 70vh;
         width: 60%;
+    }
+
+    .disiplinHero h1 {
+        font-size: 40px;
     }
 }
