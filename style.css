@@ -397,6 +397,10 @@ button:hover {
         height: 600px;
     }
 
+    .scrollBilde {
+        max-width: 600px;
+    }
+
     .innhold {
         flex-direction: column;
     }
