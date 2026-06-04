@@ -145,7 +145,8 @@ p {
 }
 
 .index section {
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
+    max-width: 100vw;
 }
 
 #s2 {
@@ -154,6 +155,8 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    min-height: calc(100vh - 50px);
+    
 
 }
 
@@ -388,8 +391,9 @@ button:hover {
     #s2,
     #ds2 {
         flex-direction: column;
-        height: 100vh;
+        min-height: 100vh;
         padding: 5px;
+        gap: 20px;
     }
 
     .d1,
@@ -402,5 +406,9 @@ button:hover {
 
     .disiplinHero h1 {
         font-size: 40px;
+    }
+
+    .heroh1 {
+        font-size: 50px;
     }
 }
