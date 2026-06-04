@@ -449,5 +449,10 @@ button:hover {
 
     .s3boks {
         width: 50vw;
+        left: 25px;
+    }
+
+    .burgermeny.visburger {
+        padding: 20px;
     }
 }
