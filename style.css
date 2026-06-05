@@ -488,6 +488,17 @@ button:hover {
     align-items: center;
     gap: 20px;
     min-height: 70vh;
+    position: relative;
+}
+
+.match::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 10%;
+    height: 2px;
+    width: 80%;
+    background-color: var(--darker-blue);
 }
 
 .bildeNavnContainer {
