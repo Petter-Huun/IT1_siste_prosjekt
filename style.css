@@ -515,6 +515,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 10px;
 }
 
 .overskriftContainer p {
@@ -585,6 +586,11 @@ button:hover {
     min-height: 30vh;
     margin-top: 5px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .quizContainer {
@@ -774,6 +780,10 @@ input {
 
     .quizContainer {
         width: 60%;
+    }
+
+    .testHero {
+        height: calc(50vh - 50px);
     }
 }
 
