@@ -595,13 +595,41 @@ button:hover {
     margin: auto;
     height: 350px;
     width: 30%;
-    background-color: var(--darker-blue);
+    background-color: var(--light-blue);
+}
+
+#testH2 {
+    text-align: center;
 }
 
 .pQuiz {
-    background-color: var(--light-blue);
+    background-color: var(--darker-blue);
     width: 90%;
     padding: 10px;
+    text-align: center;
+}
+
+input.spmRiktig {
+    box-shadow: 0 0 15px 5px green;
+    transition: 0.2s;
+}
+
+input.spmFeil {
+    box-shadow: 0 0 15px 5px red;
+    transition: 0.2s;
+}
+
+input {
+    padding: 10px;
+    background-color: rgb(194, 237, 249);
+    border: 2px solid black;
+}
+
+.quizContainer button {
+    background-color: var(--darker-blue);
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
 }
 
 
@@ -692,6 +720,10 @@ button:hover {
     .s3boks {
         width: 40vw;
     }
+
+    .quizContainer {
+        width: 50%;
+    }
 }
 
 
@@ -739,10 +771,18 @@ button:hover {
     .kortBilde {
         height: 20vh;
     }
+
+    .quizContainer {
+        width: 60%;
+    }
 }
 
 @media (width < 370px) {
     .s3boks {
         width: 70vw;
+    }
+
+    .quizContainer {
+        width: 70%;
     }
 }

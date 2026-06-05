@@ -145,12 +145,12 @@ const sporsmal = [
     },
 
     {
-        tekst: "Hvilket renn kjøres på kvelden/natten",
+        tekst: "Hvilket renn kjøres på kvelden/natten?",
         svar: "Schladming"
     },
 
     {
-        tekst: "Hvilken alpinist fikk flest WC points i forrige sesong?",
+        tekst: "Hvilken alpinist fikk flest WC points i 25/26 sesongen?",
         svar: "Marco Odermatt"
     },
 
@@ -164,13 +164,19 @@ function sjekk(elm) {
     const input = elm.previousElementSibling
     const svar = input.value    
     console.log(svar)
-    if (svar === sporsmal[spmNr].svar) {
+    if (svar.trim().toLowerCase() === sporsmal[spmNr].svar.toLowerCase()) {
+        input.classList.add("spmRiktig")
         riktig += 1
     } else {
+        input.classList.add("spmFeil")
         feil += 1
     }
 
     input.value = ""
+
+    setTimeout(() => {
+                input.classList.remove("spmRiktig", "spmFeil")
+            }, 500)
 
     spmNr += 1
 
@@ -180,9 +186,18 @@ function sjekk(elm) {
         input.value = ""
     } else {
         overskrift.innerHTML = "Quizen er ferdig!"
-        testTekst.innerHTML = "Du fikk " + riktig + "av 5"
+        testTekst.innerHTML = "Du fikk " + riktig + " av 5"
         input.value = ""
     }
     
 }
+
+const input = document.querySelector("input")
+const button = document.querySelector(".quizKnapp")
+
+input.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        button.click()
+    }
+})
 
