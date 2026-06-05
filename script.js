@@ -48,7 +48,7 @@ const kort = document.querySelectorAll(".kort")
 
 function stokkKort () {
     kort.forEach(element => {
-        let tilfeldig = Math.floor(Math.random() * 18)
+        let tilfeldig = Math.floor(Math.random() * 5)
         element.style.order = tilfeldig
     })
 }

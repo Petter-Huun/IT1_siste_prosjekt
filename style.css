@@ -481,6 +481,49 @@ button:hover {
     justify-content: center;
 }
 
+.match {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.overskriftContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overskriftContainer p {
+    border-bottom: 1px solid black;
+}
+
+.bildeContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.kort {
+    width: 15%;
+}
+
+.navnContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.pkort {
+    padding: 20px;
+    background-color: var(--light-blue);
+}
+
 
 
 
