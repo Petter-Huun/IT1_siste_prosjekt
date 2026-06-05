@@ -486,7 +486,17 @@ button:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap: 20px;
     min-height: 70vh;
+}
+
+.bildeNavnContainer {
+    height: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .overskriftContainer {
@@ -512,7 +522,7 @@ button:hover {
 }
 
 .kortBilde {
-    height: 160px;
+    height: 25vh;
 }
 
 .navnContainer {
@@ -618,6 +628,21 @@ button:hover {
     .d3bilde {
         width: 70%;
     }
+
+    .bildeContainer, .navnContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .kortBilde {
+        width: 100%;
+    }
+
+    .kort, .pkort {
+        width: calc(25% - 10px);
+    }
 }
 
 @media (width < 750px) {
@@ -670,6 +695,14 @@ button:hover {
     .burgermeny.visburger {
         padding: 20px;
     }
+
+    .kort, .pkort {
+        width: calc(30% - 10px);
+    }
+
+    .kortBilde {
+    height: 20vh;
+}
 }
 
 @media (width < 370px) {
