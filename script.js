@@ -1,7 +1,7 @@
 const burger = document.getElementById("burger")
 const burgerx = document.getElementById("burgerx")
 const burgermeny = document.getElementById("burgermeny")
-const medie = document.getElementById("medie")
+const medie = document.getElementById("testFooter")
 const disiplin = document.getElementById("disp")
 const wc = document.getElementById("wc")
 
@@ -24,11 +24,11 @@ medie.addEventListener("click", () => {
 })
 
 function bla(flytt) {
-    document.getElementById("scrollbar").scrollBy({left: flytt, behavior: "smooth"});
+    document.getElementById("scrollbar").scrollBy({ left: flytt, behavior: "smooth" });
 }
 
 function bla_y(flytt) {
-    document.getElementById("scrollbar").scrollBy({top: flytt, behavior: "smooth"});
+    document.getElementById("scrollbar").scrollBy({ top: flytt, behavior: "smooth" });
 }
 
 function visInnhold(trykk) {
@@ -45,18 +45,21 @@ function visInnhold(trykk) {
 // TEST DEG SELV
 
 const kort = document.querySelectorAll(".kort")
+const pkort = document.querySelectorAll(".pkort")
 
-function stokkKort () {
+function stokkKort(elementer) {
     kort.forEach(element => {
-        let tilfeldig = Math.floor(Math.random() * 5)
+        let tilfeldig = Math.floor(Math.random() * 100)
         element.style.order = tilfeldig
+        console.log("hei")
     })
 }
 
-stokkKort()
+stokkKort(kort)
+stokkKort(pkort)
 
 let kort1 = null
-let kort2 = null 
+let kort2 = null
 
 kort.forEach(elm => {
     elm.addEventListener("click", () => {
@@ -64,9 +67,9 @@ kort.forEach(elm => {
         elm.classList.add("trykket")
 
         if (kort1 === null) {
-            kort1 = elm 
+            kort1 = elm
         } else if (kort2 === null) {
-            kort2 = elm 
+            kort2 = elm
 
             setTimeout(sjekkKort, 500)
         }
@@ -98,11 +101,11 @@ function sjekkVinn() {
 
     if (alleKort.length == funnet.length) {
         const seier = document.getElementById("overskrift")
-        seier.innerHTML ="Du vant"
+        seier.innerHTML = "Du vant"
     }
 }
 
-    
+
 
 
 
