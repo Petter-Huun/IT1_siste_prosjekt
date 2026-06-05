@@ -58,9 +58,47 @@ function stokkKort(elementer) {
 stokkKort(kort)
 stokkKort(pkort)
 
+let valgtBilde = null
 
+kort.forEach(elm => {
+    elm.addEventListener("click", () => {
+        if (valgtBilde !== null) {
+            valgtBilde.classList.remove("valgt")
+        }
 
+        valgtBilde = elm
+        elm.classList.add("valgt")
+    })
 
+})
 
+pkort.forEach(elm => {
+    elm.addEventListener("click", () => {
+        if (valgtBilde ===  null) return
 
+        if (valgtBilde.dataset.navn === elm.dataset.navn) {
+            valgtBilde.classList.remove("valgt")
+            valgtBilde.classList.add("funnet")
+            elm.classList.add("funnet")
+            valgtBilde = null
+            sjekkVinn()
+        } else {
+            valgtBilde.classList.add("feil")
+            elm.classList.add("feil")
+            setTimeout(() => {
+                valgtBilde.classList.remove("valgt", "feil")
+                elm.classList.remove("feil")
+                valgtBilde = null
+            }, 500)
+        }
+    })
+
+})
+
+function sjekkVinn() {
+    const funnet = document.querySelectorAll(".kort.funnet")
+    if (funnet.length === kort.length) {
+        document.querySelector(".overskriftContainer p").innerHTML = "Du vant!"
+    }
+}
 

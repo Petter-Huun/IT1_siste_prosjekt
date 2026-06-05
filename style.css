@@ -522,10 +522,27 @@ button:hover {
 .pkort {
     padding: 20px;
     background-color: var(--light-blue);
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .kort:hover, .pkort:hover {
     cursor: pointer;
+}
+
+.kort.valgt {
+    outline: 3px solid blue;
+}
+
+.kort.funnet, .pkort.funnet {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.kort.feil, .pkort.feil {
+    outline: 3px solid red;
 }
 
 
