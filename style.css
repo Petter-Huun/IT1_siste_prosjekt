@@ -542,7 +542,8 @@ button:hover {
     align-items: center;
 }
 
-.kort:hover, .pkort:hover {
+.kort:hover,
+.pkort:hover {
     cursor: pointer;
 }
 
@@ -550,13 +551,15 @@ button:hover {
     box-shadow: 0 0 15px 5px blue;
 }
 
-.kort.funnet, .pkort.funnet {
+.kort.funnet,
+.pkort.funnet {
     opacity: 0.8;
     pointer-events: none;
     box-shadow: 0 0 15px 5px green;
 }
 
-.kort.feil, .pkort.feil {
+.kort.feil,
+.pkort.feil {
     box-shadow: 0 0 15px 5px red;
 }
 
@@ -629,7 +632,8 @@ button:hover {
         width: 70%;
     }
 
-    .bildeContainer, .navnContainer {
+    .bildeContainer,
+    .navnContainer {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
@@ -640,7 +644,8 @@ button:hover {
         width: 100%;
     }
 
-    .kort, .pkort {
+    .kort,
+    .pkort {
         width: calc(25% - 10px);
     }
 }
@@ -696,13 +701,14 @@ button:hover {
         padding: 20px;
     }
 
-    .kort, .pkort {
+    .kort,
+    .pkort {
         width: calc(30% - 10px);
     }
 
     .kortBilde {
-    height: 20vh;
-}
+        height: 20vh;
+    }
 }
 
 @media (width < 370px) {
