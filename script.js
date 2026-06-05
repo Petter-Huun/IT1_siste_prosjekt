@@ -72,9 +72,13 @@ kort.forEach(elm => {
 
 })
 
+let forsok = 0
+
 pkort.forEach(elm => {
     elm.addEventListener("click", () => {
-        if (valgtBilde ===  null) return
+        if (valgtBilde === null) return
+
+        forsok += 1
 
         if (valgtBilde.dataset.navn === elm.dataset.navn) {
             valgtBilde.classList.remove("valgt")
@@ -98,7 +102,24 @@ pkort.forEach(elm => {
 function sjekkVinn() {
     const funnet = document.querySelectorAll(".kort.funnet")
     if (funnet.length === kort.length) {
-        document.querySelector(".overskriftContainer p").innerHTML = "Du vant!"
+        if (forsok == 5) {
+            document.querySelector(".overskriftContainer p").innerHTML = "Du vant! Og klarte det på første forsøk "
+        } else {
+            document.querySelector(".overskriftContainer p").innerHTML = "Du vant! Og brukte " + forsok + " forsøk"
+        }
     }
+
+}
+
+function reset() {
+    document.querySelectorAll(".kort, .pkort").forEach(elm => {
+        elm.classList.remove("funnet", "valgt", "feil")
+        elm.style.pointerEvents = "auto"
+        forsok = 0
+    })
+    valgtBilde = null
+    document.querySelector(".overskriftContainer p").innerHTML = "Trykk på riktig bilde til riktig navn"
+    stokkKort(kort)
+    stokkKort(pkort)
 }
 

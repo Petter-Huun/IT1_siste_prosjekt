@@ -508,7 +508,11 @@ button:hover {
 }
 
 .kort {
-    width: 15%;
+    width: 18%;
+}
+
+.kortBilde {
+    height: 160px;
 }
 
 .navnContainer {
@@ -533,16 +537,28 @@ button:hover {
 }
 
 .kort.valgt {
-    outline: 3px solid blue;
+    box-shadow: 0 0 15px 5px blue;
 }
 
 .kort.funnet, .pkort.funnet {
-    opacity: 0.4;
+    opacity: 0.8;
     pointer-events: none;
+    box-shadow: 0 0 15px 5px green;
 }
 
 .kort.feil, .pkort.feil {
-    outline: 3px solid red;
+    box-shadow: 0 0 15px 5px red;
+}
+
+.resetKnapp {
+    padding: 20px;
+    background-color: var(--light-blue);
+    border: 3px solid var(--darker-blue);
+    border-radius: 30px;
+}
+
+.quiz {
+    min-height: 30vh;
 }
 
 
