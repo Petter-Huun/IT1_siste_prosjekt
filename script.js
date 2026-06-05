@@ -44,6 +44,8 @@ function visInnhold(trykk) {
 
 // TEST DEG SELV
 
+//Match
+
 const kort = document.querySelectorAll(".kort")
 const pkort = document.querySelectorAll(".pkort")
 
@@ -121,5 +123,16 @@ function reset() {
     document.querySelector(".overskriftContainer p").innerHTML = "Trykk på riktig bilde til riktig navn"
     stokkKort(kort)
     stokkKort(pkort)
+}
+
+//Spørsmål
+
+
+function sjekk(elm) {
+    const input = elm.previousElementSibling
+    const svar = input.value
+    console.log(svar)
+    const output = document.querySelector("div > h1")
+    output.innerHTML = "Du skrev: " + svar
 }
 
