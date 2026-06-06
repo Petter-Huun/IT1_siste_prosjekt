@@ -200,4 +200,3 @@ input.addEventListener("keydown", function (event) {
         button.click()
     }
 })
-
