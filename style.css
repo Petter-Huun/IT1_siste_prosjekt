@@ -466,16 +466,13 @@ button:hover {
     border-radius: 20px;
     width: 30%;
     padding: 5px;
+    opacity: 0.5;
 }
 
 .vis-knapp:hover {
-    background-color: darkgreen;
-    color: var(--white);
-}
-
-.vis-knapp.endreFarge:hover {
-    background-color: darkred;
-    color: var(--white);
+    opacity: 1;
+    transition: 0.5s ease;
+    transform: scale(1.05);
 }
 
 .venstre:hover,
